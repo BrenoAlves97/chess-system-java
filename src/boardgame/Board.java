@@ -32,10 +32,17 @@ public class Board {
 	public void setColumns(int columns) {
 		this.columns = columns;
 	}
+		
+	//Methods: Board.Piece(row, column) and Board.Piece(position)
 	
+	public Piece piece(int row, int column) {
+		return pieces [row][column];
+	}
 	
-	
-	
+	//SobreCarga do metodo piece.
+	public Piece piece(Position position) {
+		return pieces[position.getRow()][position.getColumn()];
+	}
 	
 	
 	
